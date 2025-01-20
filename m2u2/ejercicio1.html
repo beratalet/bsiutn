@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <style>
+        .container {
+            display: flex;
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+        }
+
+        .white-space {
+            flex: 1;
+            /* Fills the remaining space on the left */
+            background-color: white;
+            /* Ensure it's white */
+        }
+
+        .flex-column {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            /* Adjust width of the colored section */
+        }
+
+        .item {
+            flex: 1;
+            /* Equal height for all items */
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="white-space"></div>
+        <div class="flex-column">
+            <div class="item red">1</div>
+            <div class="item blue">2</div>
+            <div class="item green">3</div>
+        </div>
+    </div>
+</body>
+
+</html>

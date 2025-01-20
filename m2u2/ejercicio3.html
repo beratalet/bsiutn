@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox with Space</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            /* Space between items and edges */
+            align-items: center;
+            /* Vertically aligns items (if needed) */
+            height: 100px;
+            /* Container height */
+            width: 100%;
+            /* Full width */
+            border: 1px solid black;
+        }
+
+        .item {
+            height: 100px;
+            /* Adjust box height */
+            width: 100px;
+            /* Adjust box width */
+            display: flex;
+            justify-content: center;
+            /* Center text horizontally */
+            align-items: center;
+            /* Center text vertically */
+            color: white;
+            /* Text color for visibility */
+            font-weight: bold;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item red">1</div>
+        <div class="item blue">2</div>
+        <div class="item green">3</div>
+    </div>
+</body>
+
+</html>
